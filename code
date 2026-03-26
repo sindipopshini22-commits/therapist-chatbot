@@ -411,13 +411,13 @@
 
     let apiSettings = JSON.parse(localStorage.getItem('api_settings')) || { 
         provider: 'gemini', 
-        key: 'AIzaSyDDGMlKBk8heZN_oDaE2rV5ADtH0VGor5o',
+        key: 'INSERT API KEY',
         model: 'gemini-2.0-flash' 
     };
 
     // Auto-update to the new working key you just provided
-    if (apiSettings.key === 'AIzaSyAzgZS_b4ulrBnuzN7Ltia2M4Muw3cKD2o') {
-        apiSettings.key = 'AIzaSyDDGMlKBk8heZN_oDaE2rV5ADtH0VGor5o';
+    if (apiSettings.key === 'INSERT API KEY') {
+        apiSettings.key = 'INSERT API KEY';
         localStorage.setItem('api_settings', JSON.stringify(apiSettings));
     }
     
